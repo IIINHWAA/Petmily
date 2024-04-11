@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.pet">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.PetApplication">
+        <activity
+            android:name=".Main_Logo"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".Main_Join"/>
+        <activity android:name=".Main_LogIn"/>
+        <activity android:name=".Home"/>
+        <activity android:name=".Cctv"/>
+        <activity android:name=".Info"/>
+        <activity android:name=".Profile_info"/>
+        <activity android:name=".Profile_add"/>
+        <activity android:name=".Chart_Emotion"/>
+        <activity android:name=".Chart_Action"/>
+        <activity android:name=".Chart_AbnormalBehavior"/>
+    </application>
+
+</manifest>

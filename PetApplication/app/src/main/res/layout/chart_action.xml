@@ -1,0 +1,188 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#e9ecef"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_marginTop="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <ImageButton
+            android:layout_marginLeft="20dp"
+            android:backgroundTint="#e9ecef"
+            android:scaleType="fitCenter"
+            android:id="@+id/btn_action_back"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:src="@drawable/img_6"
+            android:layout_weight="1"/>
+
+
+        <TextView
+            android:id="@+id/tv_abnormal_behavior"
+            android:textColor="#999999"
+            android:fontFamily="@font/rubik"
+            android:text="Activity"
+            android:gravity="center"
+            android:textSize="25dp"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="8"
+            />
+
+        <ImageButton
+            android:layout_marginRight="20dp"
+            android:backgroundTint="#e9ecef"
+            android:scaleType="fitCenter"
+            android:id="@+id/btn_petInfo"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_weight="1"/>
+
+
+
+    </LinearLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#e9ecef">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="30dp"
+            android:orientation="vertical">
+
+            <!-- ㅡㅡㅡㅡㅡㅡㅡㅡ수면 시간ㅡㅡㅡㅡㅡㅡㅡㅡㅡ -->
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/aller"
+                android:gravity="center"
+                android:text="@string/rest_time"
+                android:textSize="25dp"
+                android:textStyle="bold" />
+
+            <com.github.mikephil.charting.charts.BarChart
+                android:layout_marginTop="10dp"
+                android:id="@+id/rest_chart"
+                android:layout_width="match_parent"
+                android:layout_height="300dp"
+                android:background="@drawable/background_corner_shape"/>
+
+            <LinearLayout
+                android:layout_marginTop="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:orientation="horizontal"
+                >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/aller"
+                    android:gravity="center"
+                    android:text="평균 휴식 시간 (6시간 이내) : "
+                    android:textSize="18dp"
+                    android:textStyle="bold" />
+
+
+                <TextView
+                    android:fontFamily="@font/aller"
+                    android:textStyle="bold"
+                    android:id="@+id/rest_minute"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:text="0"
+                    android:textColor="#539591"
+                    android:textSize="18dp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/aller"
+                    android:gravity="center"
+                    android:text="@string/minute"
+                    android:textSize="18dp"
+                    android:textStyle="bold" />
+
+
+            </LinearLayout>
+
+            <!-- ㅡㅡㅡㅡㅡㅡㅡㅡ식사 시간ㅡㅡㅡㅡㅡㅡㅡㅡㅡ -->
+
+            <!-- ㅡㅡㅡㅡㅡㅡㅡㅡ활동 시간ㅡㅡㅡㅡㅡㅡㅡㅡㅡ -->
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:fontFamily="@font/aller"
+                android:gravity="center"
+                android:text="@string/movement_time"
+                android:textSize="25dp"
+                android:textStyle="bold" />
+
+            <com.github.mikephil.charting.charts.BarChart
+                android:layout_marginTop="10dp"
+                android:id="@+id/act_chart"
+                android:layout_width="match_parent"
+                android:layout_height="300dp"
+                android:background="@drawable/background_corner_shape"/>
+
+            <LinearLayout
+                android:layout_marginTop="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:orientation="horizontal"
+                android:layout_marginBottom="80dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/aller"
+                    android:gravity="center"
+                    android:text="평균 운동 시간 (6시간 이내) : "
+                    android:textSize="18dp"
+                    android:textStyle="bold" />
+
+
+                <TextView
+                    android:fontFamily="@font/aller"
+                    android:textStyle="bold"
+                    android:id="@+id/act_minute"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:text="0"
+                    android:textColor="#539591"
+                    android:textSize="18dp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/aller"
+                    android:gravity="center"
+                    android:text="@string/minute"
+                    android:textSize="18dp"
+                    android:textStyle="bold" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</LinearLayout>

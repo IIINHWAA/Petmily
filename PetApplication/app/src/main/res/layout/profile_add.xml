@@ -1,0 +1,338 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFE8E8">
+
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <View
+            android:backgroundTint="#83CFC1"
+            android:layout_width="match_parent"
+            android:layout_height="70dp"
+            android:background="@drawable/shape_rectangle" />
+
+        <View
+            android:backgroundTint="@color/white"
+            android:layout_marginTop="200dp"
+            android:layout_gravity="center"
+            android:layout_width="800dp"
+            android:layout_height="800dp"
+            android:background="@drawable/oval" />
+
+    </FrameLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_marginTop="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <ImageButton
+                android:layout_marginLeft="20dp"
+                android:backgroundTint="#83CFC1"
+                android:scaleType="fitCenter"
+                android:id="@+id/btn_petAdd_back"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:src="@drawable/img_6"
+                android:layout_weight="1"/>
+
+
+            <TextView
+                android:textColor="#54817E"
+                android:fontFamily="@font/rubik"
+                android:text="Profile"
+                android:gravity="center"
+                android:textSize="33dp"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_weight="8"
+                />
+
+            <ImageButton
+                android:layout_marginRight="20dp"
+                android:backgroundTint="#83CFC1"
+                android:scaleType="fitCenter"
+                android:id="@+id/save_btn_add"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:src="@drawable/img_7"
+                android:layout_weight="1"/>
+
+        </LinearLayout>
+
+        <ImageView
+            android:layout_gravity="center"
+            android:padding="15dp"
+            android:id="@+id/circle_image_view"
+            android:layout_width="130dp"
+            android:layout_height="130dp"
+            android:src="@drawable/img_3"
+            android:scaleType="fitCenter"
+            android:background="@drawable/oval"
+            android:backgroundTint="@color/white" />
+
+
+        <ScrollView
+            android:layout_gravity="center"
+            android:layout_marginTop="20dp"
+            android:id="@+id/scrollView2"
+            android:layout_width="350dp"
+            android:layout_height="450dp"
+            android:background="@color/white"
+            android:layout_marginBottom="100dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp"
+                    android:gravity="center"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:fontFamily="@font/rubik"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="이름 : " />
+
+                    <EditText
+
+                        android:id="@+id/name"
+                        android:layout_width="112dp"
+                        android:layout_height="wrap_content" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp"
+                    android:gravity="center"
+                    android:orientation="horizontal">
+
+                    <RadioGroup
+                        android:id="@+id/gender"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:gravity="center"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:fontFamily="@font/rubik"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="성별 : " />
+
+                        <RadioButton
+                            android:id="@+id/woman"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="암컷" />
+
+                        <RadioButton
+                            android:id="@+id/man"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="수컷" />
+                    </RadioGroup>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp"
+                    android:gravity="center"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:fontFamily="@font/rubik"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="나이: " />
+
+                    <EditText
+
+                        android:id="@+id/age"
+                        android:layout_width="50dp"
+                        android:layout_height="wrap_content" />
+
+                    <TextView
+                        android:fontFamily="@font/rubik"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="세" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp"
+                    android:gravity="center"
+                    android:orientation="horizontal">
+
+                    <RadioGroup
+                        android:id="@+id/c_d"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:gravity="center"
+                        android:orientation="horizontal">
+
+                        <RadioButton
+                            android:id="@+id/cd_rb_cat"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="고양이" />
+
+                        <RadioButton
+                            android:id="@+id/cd_rb_dog"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="강아지" />
+                    </RadioGroup>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp"
+                    android:gravity="center"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/rubik"
+                        android:text="품종 : " />
+
+                    <EditText
+
+                        android:id="@+id/breed"
+                        android:layout_width="112dp"
+                        android:layout_height="wrap_content" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp"
+                    android:gravity="center"
+                    android:orientation="horizontal">
+
+                    <RadioGroup
+                        android:id="@+id/neuter"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:gravity="center"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="중성화 여부 : "
+                            android:fontFamily="@font/rubik"/>
+
+                        <RadioButton
+                            android:id="@+id/neuter_y"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="O" />
+
+                        <RadioButton
+                            android:id="@+id/neuter_n"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="X" />
+                    </RadioGroup>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_marginTop="20dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:orientation="horizontal">
+
+
+                    <RadioGroup
+                        android:id="@+id/disease"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:gravity="center"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="병력 여부 : "
+                            android:fontFamily="@font/rubik"/>
+
+                        <RadioButton
+                            android:id="@+id/disease_y"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="O" />
+
+                        <RadioButton
+                            android:id="@+id/disease_n"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="X" />
+                    </RadioGroup>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginBottom="50dp"
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_marginTop="10dp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="CCTV Url : "
+                        android:fontFamily="@font/rubik"/>
+
+                    <EditText
+
+                        android:id="@+id/cctv_url"
+                        android:layout_width="250dp"
+                        android:layout_height="wrap_content"
+                        android:hint="http://111.22.3.444:5555/cctv" />
+                </LinearLayout>
+            </LinearLayout>
+
+        </ScrollView>
+    </LinearLayout>
+
+
+
+
+
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
